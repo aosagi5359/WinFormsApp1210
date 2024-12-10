@@ -32,27 +32,28 @@
             button2 = new Button();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(171, 389);
+            button1.Location = new Point(194, 389);
             button1.Name = "button1";
             button1.Size = new Size(128, 23);
             button1.TabIndex = 0;
-            button1.Text = "載入影像並灰階化";
+            button1.Text = "載入影像";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(653, 389);
+            button2.Location = new Point(560, 389);
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
+            button2.Size = new Size(103, 23);
             button2.TabIndex = 1;
-            button2.Text = "Sobel";
+            button2.Text = "Sobel邊緣檢測";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
@@ -74,11 +75,22 @@
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
             // 
+            // button3
+            // 
+            button3.Location = new Point(679, 389);
+            button3.Name = "button3";
+            button3.Size = new Size(116, 23);
+            button3.TabIndex = 4;
+            button3.Text = "Hough圓形檢測";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(994, 574);
+            Controls.Add(button3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(button2);
@@ -96,5 +108,6 @@
         private Button button2;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
+        private Button button3;
     }
 }
